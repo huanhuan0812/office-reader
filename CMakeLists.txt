@@ -4,6 +4,9 @@ project(office-reader VERSION 0.1.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# 添加 Homebrew 的路径到 CMAKE_PREFIX_PATH
+list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew")
+
 add_subdirectory(pptx)
 
 include(CMakePackageConfigHelpers)
